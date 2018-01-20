@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>CSS - Flexbox</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src=""></script>
+        <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -20,6 +20,13 @@
                     <li><a href="" class="tw">Twitter</a></li>
                 </ul>
             </nav>
+
+            <div style="margin: 20px;">
+                <span> Layout: </span>
+                <a href="#" class="stack">Stack</a>
+                <a href="#" class="grid">Grid</a>
+            </div>
+
             <section id="blocks">
                 <article>
                     <h2> cos cos 1...</h2>
@@ -45,7 +52,41 @@
                         Delectus deserunt esse id nobis pariatur totam unde! Dicta facilis fugiat nemo tempora.
                     </p>
                 </article>
+                <article>
+                    <h2> cos cos 4...</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Consequuntur cupiditate deleniti expedita impedit magni quae velit, veniam.
+                        Delectus deserunt esse id nobis pariatur totam unde! Dicta facilis fugiat nemo tempora.
+                    </p>
+                </article>
+                <article>
+                    <h2> cos cos 5...</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Consequuntur cupiditate deleniti expedita impedit magni quae velit, veniam.
+                        Delectus deserunt esse id nobis pariatur totam unde! Dicta facilis fugiat nemo tempora.
+                    </p>
+                </article>
+                <article>
+                    <h2> cos cos 6...</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Consequuntur cupiditate deleniti expedita impedit magni quae velit, veniam.
+                        Delectus deserunt esse id nobis pariatur totam unde! Dicta facilis fugiat nemo tempora.
+                    </p>
+                </article>
             </section>
         </div>
+
+    <script>
+        $("a.stack").on("click", function () {
+            $("article").addClass("stack");
+        });
+        $("a.grid").on("click", function () {
+            $("article").removeClass("stack");
+        });
+    </script>
+
     </body>
 </html>

@@ -17,28 +17,24 @@ body{
     display: flex;
     background: white;
     flex-wrap: wrap;
+    flex-flow: column-reverse;
+    justify-content: flex-start; /* main axis*/
+    height: 800px;
 }
 
 .box{
     height: 100px;
-    /*flex-grow: 1;*/
-    /*flex-basis: 700px;*/
-    /*flex-shrink: 5;*/
-    /*flex:1 0 200px;*/
-    flex: 1; /* grow=1; shrink=1; basis=0*/
+    flex: 0 0 100px; /* grow=1; shrink=1; basis=0*/
 }
 
 .one{
     background: red;
-    /*flex-basis: 100px;*/
 }
 
 .two{
     background: blue;
-    /*flex-basis: 200px;*/
 }
 
 .three{
     background: green;
-    /*flex-basis: 300px;*/
 }

@@ -5,37 +5,33 @@
 
 body{
     background: #eeeeee;
+    color: #333333;
 }
 
 .wrapper{
     width: 100%;
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
+
 }
 
-.flex-container{
+#blocks{
     display: flex;
-    background: white;
-    flex-wrap: wrap;
-    flex-flow: column;
-    align-items: center; /* cross axis*/
-    /*justify-content: center; !* main axis*!*/
-    height: 600px;
+    margin: 10px;
+    justify-content: space-between;
 }
 
-.box{
-    width: 100px;
-    flex: 0 0 100px; /* grow=1; shrink=1; basis=0*/
+#blocks div{
+    flex: 0 0 100px;
+    padding: 40px 0;
+    text-align: center;
+    background: #cccccc;
 }
 
-.one{
-    background: red;
-}
+.one{ order: 3;}
 
-.two{
-    background: blue;
-}
+.two{ order: 2;}
 
-.three{
-    background: green;
-}
+.three{ order: 1;}
+
+.four{ order: 0;}
